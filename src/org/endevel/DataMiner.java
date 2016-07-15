@@ -2,17 +2,18 @@ package org.endevel;
 
 import java.io.IOException;
 
-import javax.security.auth.Subject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.PrintWriter;
-import java.util.List;
 
 import org.endevel.logic.DBManagement;
 import org.endevel.logic.PersonInfo;
+
+import java.io.PrintWriter;
+import java.util.List;
+
 
 @WebServlet(description = "Обработчик запроса на поиск данных", urlPatterns = { "/DataMiner" })
 public class DataMiner extends HttpServlet {
