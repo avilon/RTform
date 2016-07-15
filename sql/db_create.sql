@@ -236,6 +236,9 @@ insert into "AUTO" ("ID", "PERSON_ID", "BRAND", "MODEL")
 values
 ('4', '4', 'Kia', 'Rio');
 
+insert into "AUTO" ("ID", "PERSON_ID", "BRAND", "MODEL")
+values
+('5', '5', 'Volvo', 'Sx-950');
 
 
 
