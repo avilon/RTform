@@ -13,6 +13,8 @@ public class PersonInfo {
         street = rs.getString("STREET");
         house = rs.getString("HOUSE");
         flat = rs.getString("FLAT");
+        brand = rs.getString("BRAND");
+        model = rs.getString("MODEL");
     }
 
     public int getId() {
