@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>X-Files</title>
+<link type="text/css" rel="stylesheet" href="style.css" media="all" />
+</head>
+<SCRIPT type="text/javascript">
+
+<!--
+
+function validate_form ( )
+{
+	valid = true;
+
+        if (( document.input_form.Family.value == "" )    &&
+            ( document.input_form.FirstName.value == "" ) &&
+            ( document.input_form.LastName.value == "" )  &&
+            ( document.input_form.City.value == "")       &&
+            ( document.input_form.Brand.value == ""))           
+        {
+                alert ( "Ну хоть что-нибудь надо заполнить" );
+                valid = false;
+        }
+
+        return valid;
+}
+
+//-->
+
+</SCRIPT>
+
+<body>
+	<div id="header">
+		<h1>
+			<span class="form">Форма </span>
+			<span class="search">поиска </span>
+			<span class="address">в адресной базе</span></a>
+		</h1>
+	</div>
+	<div class="form_box">
+	
+		<form name="input_form" method="GET" action="DataMiner" onsubmit="return validate_form()">
+			<table>			
+				<tr>
+					<td>
+						<label for="Family">Фамилия</label>
+					<td>
+					<td>
+						<input type="text" name="Family" class="rfield" id="Family">
+					</td>				
+				</tr>
+				<tr>
+					<td>
+						<label for="FirstName">Имя</label>
+					<td>
+					<td>
+						<input type="text" name="FirstName" id="FirstName">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="LastName">Отчество</label>
+					<td>
+					<td>
+						<input type="text" name="LastName" id="LastName">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="City">Город</label>
+					<td>
+					<td><input type="text" name="City" id="City"></td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Brand">Марка машины</label>
+					<td>
+					<td><input type="text" name="Brand" id="Brand"></td>
+				</tr>
+				<tr>
+					<td align="right" colspan="2">
+					<input type="submit" value="Отправить">
+					</td>
+				</tr>
+			</table>
+		</form>
+	
+	</div>	
+</body>
+</html>
